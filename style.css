@@ -4,7 +4,7 @@
     background-color: transparent !important;  
   }
 
-  .card-header, .card-title, .card-text {
+  .card-header, .card-title, .card-text, #link-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,9 +20,19 @@
     padding: 30px;
   }
 
-  .card-text {
+  .card-text, #link-text {
     font-size: 2em;
   }
+
+  #link-text{
+text-decoration: none !important;
+color: black;
+  }
+
+  #link-text:hover{
+    color: rgb(87, 87, 87);
+    transition: 0.5s ease-in-out;
+      }
 
 
 #green {
@@ -53,16 +63,17 @@
   @media (max-width: 768px) {
     .card-header {
         font-size: 2em;
-        padding: 20px;
+
     }
 
     .card-title {
         font-size: 1.5em;
-        padding: 20px;
     }
 
-    .card-text {
+    .card-text, #link-text {
         font-size: 1em;
+        padding: 10px;
+        text-align: center;
     }
 
     .button-container {
