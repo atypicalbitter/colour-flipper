@@ -1,8 +1,29 @@
 .card {
     height: 100vh;
     width: 100vw;
-    background-color: transparent !important;
-}
+    background-color: transparent !important;  
+  }
+
+  .card-header, .card-title, .card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-header{
+    font-size: 4em;
+    padding: 30px;
+  }
+
+  .card-title {
+    font-size: 3em;
+    padding: 30px;
+  }
+
+  .card-text {
+    font-size: 2em;
+  }
+
 
 #green {
     background-color: green !important;
@@ -21,6 +42,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 100px; 
+    margin-top: 60px;
   }
   
   .btn {
